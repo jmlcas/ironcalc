@@ -1,14 +1,19 @@
 services:
 
-  ironcalc:
+  server:
+    image: ghcr.io/ironcalc/ironcalc-server:0.6.0
+    container_name: ironcalc-server
+    restart: unless-stopped
+    
+  caddy:
     image: ghcr.io/ironcalc/ironcalc-caddy:0.6.0
-    container_name: ironcalc
- #   healthcheck:
- #     test: ["CMD-SHELL", "nc -z 127.0.0.1 2080 || exit 1"]
- #     interval: 10s
- #     timeout: 5s
- #     retries: 3
- #     start_period: 90s
+    container_name: ironcalc-caddy
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z 127.0.0.1 2080 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 90s
     ports:
       - "8200:2080"
     restart: unless-stopped
