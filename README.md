@@ -6,4 +6,4 @@ Debes utilizar un dominio ó subdominio y con Nginx Proxy Manager enlazarlo a "I
 
 Ver vídeo:
 
-[![Alt text](https://img.youtube.com/vi/xxxxxx/0.jpg)](https://www.youtube.com/watch?v=xxxxx)
+[![Alt text](https://img.youtube.com/vi/AZ3GTSnV_JA.jpg)](https://www.youtube.com/watch?v=AZ3GTSnV_JA
