@@ -1,12 +1,12 @@
 services:
 
   server:
-    image: ghcr.io/ironcalc/ironcalc-server:0.6.0
+    image: ghcr.io/ironcalc/ironcalc-server:0.8.3
     container_name: ironcalc-server
     restart: unless-stopped
     
   caddy:
-    image: ghcr.io/ironcalc/ironcalc-caddy:0.6.0
+    image: ghcr.io/ironcalc/ironcalc-caddy:0.8.3
     container_name: ironcalc-caddy
     ports:
       - "8200:2080"
